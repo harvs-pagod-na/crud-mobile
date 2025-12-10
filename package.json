@@ -9,7 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "build:web": "expo export:web",
-    "vercel-build": "expo start --web --no-dev --minify"
+    "vercel-build": "expo prebuild && expo export --no-dev --minify"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
